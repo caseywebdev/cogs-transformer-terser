@@ -1,7 +1,7 @@
-var helper = require('cogs-test-helper');
+import helper from 'cogs-test-helper';
 
-helper.run({
-  'test/config.json': {
+export default helper.createTests({
+  'test/config.js': {
     'test/input.js': helper.getFileBuffer('test/output.js'),
     'test/error.js': Error
   }

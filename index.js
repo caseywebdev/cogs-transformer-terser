@@ -1,8 +1,6 @@
-const { minify } = require('terser');
+import { minify } from 'terser';
 
-module.exports = ({ file: { buffer }, options }) => {
-  const { code, error } = minify(buffer.toString(), options);
-  if (error) throw error;
-
+export default async ({ file: { buffer }, options }) => {
+  const { code } = await minify(buffer.toString(), options);
   return { buffer: Buffer.from(`${code}\n`) };
 };
