@@ -1,10 +1,11 @@
 {
   "name": "cogs-transformer-terser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Casey Foster <c@sey.me>",
   "description": "An tarser transformer for Cogs.",
   "license": "MIT",
   "type": "module",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/caseywebdev/cogs-transformer-terser"
